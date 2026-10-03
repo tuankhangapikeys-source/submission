@@ -7,46 +7,53 @@
     
     <!-- Kết nối file CSS để thiết kế giao diện -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
 
-    <title>Hồ Sơ Cá Nhân </title>
+    <title>Hồ Sơ Cá Nhân</title>
 </head>
 
 <body>
     <main>
-        <header>
+        <header class="site-header">
+            <div class="header-container">
             <!-- Ảnh đại diện -->
-            <img src="image/avatar.jpg" width="150px" height="150px" alt="My avatar">
-
-            <p>[Tên + vị trí]</p>
+            <!-- <img src="image/avatar.jpg" width="150px" height="150px" alt="My avatar"> -->
+            <div class="logo"><a href="#"><img src="image/avatar.jpg" width="150px" height="150px" alt="My avatar"></a></div>
+            <p class="name">Tran Nhu Tuan Khang - Software Developer</p>
             
             <!-- Thanh điều hướng đến các phần khác nhau của website -->
-            <nav> [About] [Skills] [Projects] [Contact] </nav>
+            <nav class = "nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </nav>
+            </div>
         </header>
 
         <!-- Hero section -->
         <section id="hero">
             <!-- Viết một đoạn giới thiệu ngắn về bản thân --> 
-             <p>[Giới thiệu ngắn gọn về bản thân]</p>
+             <p class = "mota">Hello everyone, my name is Khang. I am 15 years old and I live in Gia Lai. I am currently a student. In my free time, I like reading books, listening to music, and hanging out with my friends. I am a friendly and hard-working person. Nice to meet you all!</p>
         </section>
         
         <section id="about">
             <h2>About me</h2>
-            
-            <p>[Thông tin cơ bản về bạn]</p>
-            <p>[Viết lý do bạn muốn tham gia HTVH]</p>
-            <p>[Bạn muốn đạt được điều gì khi tham gia HTVH]</p>
+            <p>A passionate developer dedicated to building responsive web applications and solving complex technical challenges through efficient debugging.</p>
+            <p>Reasons for joining the HTVH Club: I want to improve myself, contribute to the club, make new friends, and become more creative.</p>
+            <p>What I want to achieve by joining the club is to practice my communication skills and learn new things and improve my self.</p>
         </section>
         
         <section id="skills">
             <h2>My Skills</h2>
 
-            <h3>Công Nghệ </h3>
-            <p>[Tôi đã học vững Python/ C++]</p>
-            <p>[Tôi đã tìm hiểu 1 số kiến thức cơ bản về HTML, CSS, Javascript]</p>
+            <h3>Technology</h3>
+            <p>I have gained a solid command of Python and C++.</p>
+            <p>I have learned some basics of HTML, CSS, and JavaScript.</p>
             
-            <h3>Công Cụ</h3>
-            <p>[Tôi đã sử dụng git/github cho các dự án cá nhân] </p>
-            <p>[Tôi sử dụng ChatGPT, ClaudeAI hiệu quả cho việc lập trình] </p>
+            <h3>Tools</h3>
+            <p>I have used Git/GitHub for personal projects. </p>
+            <p>I can use chatgpt, claude,... to support my work. </p>
         </section>
         
         <section id="projects">
@@ -54,28 +61,22 @@
 
             <div class="project-container">
                 <article class="projects">
-                    <h4>[Website Hồ Sơ Cá Nhân]</h4>
-
-                    <p>[Đây là dự án web cá nhân đầu tiên của tôi]</p>
-                    <p>[Tôi xây dựng portfolio này để ứng tuyển vào Ban Kỹ thuật HTVH.]</p>
-                    <p>[Viết bằng: HTML, CSS, JavaScript]</p>
-                    <!-- Link đến project / GitHub / demo -->
-                    <p><a href="#">view</a> </p>
+                    <h4>I don't have.</h4>
                 </article>
             </div>
         </section>
 
-        <footer id="contact">
-            <h2>Contact</h2>
-
-            <p>Email: [My email]</p>
-            <p>Facebook: <a href="">[My facebook]</a></p>
+        <footer id="contact"> 
+        <h2>Contact</h2> 
+           <div class="contact-links">
+                 <p><i class="fas fa-envelope"></i> Email: <a href="#">trannhutuankhang2704@gmail.com</a></p> 
+                 <p><i class="fab fa-facebook-f"></i> Facebook: <a href="#">Trần Như Tuấn Khang</a></p> 
+            </div>
         </footer>
     </main>
 
     <!-- Kết nối file JavaScript để thêm các chức năng tương tác -->
     <script src="index.js"></script>
-
 </body>
 
 </html>
